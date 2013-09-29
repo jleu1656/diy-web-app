@@ -1,10 +1,10 @@
 from bottle import route, run
 @route('/')
-@route('/greet/Jessie')
+@route('/greet/<name>')
 
 def index():
 	return "Hello World!"
-	
+
 def greet(name):
 	return "Hello, %s!" % name
 
