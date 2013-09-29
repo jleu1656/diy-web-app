@@ -12,7 +12,7 @@ def greet(name='World'):
 
 @route('/static/<path:path>')
 def static(path):
-    return static_file(path. root=static_root)
+    return static_file(path, root=static_root)
 
 if __name__ == '__main__':
     run(debug=True, reloader=True, host='0.0.0.0')
